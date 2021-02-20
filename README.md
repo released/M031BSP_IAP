@@ -15,13 +15,13 @@ programming with ICP tool , APP_01 address : 0x00010000 , APP_02 address : 0x000
 
 to test auto jump , from boot loader to application 
 
-3. under USE_EMULATE_AUTO_JUMP , when power on from boot loader project , 
+4. under USE_EMULATE_AUTO_JUMP , when power on from boot loader project , 
 
 if no trigger update firmware flow (flag_update_fw) , after timeout will jump to application code
 
 ![image](https://github.com/released/M031BSP_IAP/blob/main/bootloader_timeout.jpg)
 
-4. under USE_MANUAL_UPDATE_FW  , when power on from boot loader project , 
+5. under USE_MANUAL_UPDATE_FW  , when power on from boot loader project , 
 
 will wait for update firmware , by press 1 / 2 to select application code update
 
@@ -31,5 +31,5 @@ will wait for update firmware , by press 1 / 2 to select application code update
 
 ![image](https://github.com/released/M031BSP_IAP/blob/main/app02.jpg)
 
-5. under application code , press z/Z/x/X , will jump to boot loader (same as nRESET pin)
+6. under application code , press z/Z/x/X , will jump to boot loader (same as nRESET pin)
 
